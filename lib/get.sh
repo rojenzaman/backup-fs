@@ -21,5 +21,5 @@ if [[ ! "${lflag}" ]]; then echo "-l option must be specified"; exit 1; fi
 if [[ ! "${dflag}" ]]; then echo "-d option must be specified"; exit 1; fi
 
 while IFS= read -r entity; do
-	rsync -Rradzv "${entity}" "${dir}/"
+	rsync -Rradhzv --delete "${entity}" "${dir}/"
 done < "${list}"
