@@ -1,0 +1,10 @@
+Define your files and directories to be backed up to a LIST file.
+Define backup DIR in Makefile.
+
+Then:
+  $ make backup
+
+To clean:
+  $ make clean
+
+
